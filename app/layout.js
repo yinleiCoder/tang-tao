@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "知夏",
-  description: "",
+  description: "愿你有诗有梦，有坦坦荡荡的远方",
 };
 
 export default function RootLayout({ children }) {
