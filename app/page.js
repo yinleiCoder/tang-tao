@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import Float3DGallery from "./components/float3DGallery";
 import MiniTimelineCards from "./components/miniTimelineCards";
+import StackCards from "./components/stackCards";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
       </section>
       <Float3DGallery />
       <MiniTimelineCards />
+      <StackCards />
       <section className="w-full h-screen overflow-hidden bg-green-300"></section>
     </main>
   );
