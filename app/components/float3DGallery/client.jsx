@@ -68,7 +68,7 @@ export default function Float3DGallery() {
 
       ScrollTrigger.create({
         trigger: stickyContainerRef.current,
-        start: "start start",
+        start: "top top",
         end: `+=${window.innerHeight * 5}px`,
         pin: true,
         scrub: 1,
