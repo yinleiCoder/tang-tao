@@ -4,6 +4,7 @@ import Float3DGallery from "./components/float3DGallery";
 import MiniTimelineCards from "./components/miniTimelineCards";
 import StackCards from "./components/stackCards";
 import InfiniteMarquee from "./components/infiniteMarquee";
+import InteractiveFooter from "./components/interactiveFooter";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <Float3DGallery />
       <StackCards />
       <MiniTimelineCards />
+      <InteractiveFooter />
     </main>
   );
 }

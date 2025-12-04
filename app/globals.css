@@ -121,7 +121,6 @@
   }
 }
 
-/* 自定义样式 */
-::-webkit-scrollbar {
-  display: none;
+body {
+  overflow-x: hidden;
 }

@@ -152,17 +152,17 @@ export default function InfiniteMarquee() {
         <section className="hero absolute top-0 left-0 w-full h-svh overflow-hidden">
           <div className="aboutMe w-full absolute left-0 top-1/2 -translate-y-1/2 p-4 flex flex-col lg:flex-row gap-4">
             <div className="meBlock flex-1">
-              <p className="font-medium text-2xl lg:text-3xl leading-normal">
+              <p className="font-medium text-3xl lg:text-2xl leading-normal">
                 曾经，在中国联通(网络部)工作
               </p>
             </div>
             <div className="meBlock flex-1">
-              <p className="font-medium text-2xl lg:text-3xl leading-normal">
+              <p className="font-medium text-3xl lg:text-2xl leading-normal">
                 现在，担任公立学校编制内的教师
               </p>
             </div>
             <div className="meBlock flex-1">
-              <p className="font-medium text-2xl lg:text-3xl leading-normal">
+              <p className="font-medium text-3xl lg:text-2xl leading-normal">
                 学高为师，身正为范
               </p>
             </div>

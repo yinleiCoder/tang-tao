@@ -9,6 +9,7 @@
 - [Tailwindcss](https://tailwindcss.com/docs/installation/using-vite)
 - [Tailwind Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [Shadcn](https://ui.shadcn.com/docs/installation/next)
+- [MatterJS](https://github.com/liabru/matter-js/wiki/Getting-started)
 - [Google Fonts](https://fonts.google.com/)
 - [HeroIcons](https://heroicons.com/outline)
 - [React Lenis](https://github.com/darkroomengineering/lenis/blob/main/packages/react/README.md)
