@@ -107,41 +107,41 @@ export default function StackCards() {
         ref={stackCardsRef}
         className="stackCards w-full h-svh relative overflow-hidden bg-[#fffef8]"
       >
-        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
+        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-2/3 md:w-1/2 lg:w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
           <div className="cardImg flex-[1,1,0] w-full min-h-0">
-            <video src="/videos/1.mp4" className="w-full h-full object-cover" />
+            <video src="/videos/1.mp4" className="w-full h-full object-cover will-change-transform" />
           </div>
           <div className="cardContent flex-[0,0,12px] flex items-center">
             <p className="uppercase text-lg">摄于遂宁市-涛妹26岁生日</p>
           </div>
         </div>
-        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
+        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-2/3 md:w-1/2 lg:w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
           <div className="cardImg flex-[1,1,0] w-full min-h-0">
-            <video src="/videos/2.mp4" className="w-full h-full object-cover" />
+            <video src="/videos/2.mp4" className="w-full h-full object-cover will-change-transform" />
           </div>
           <div className="cardContent flex-[0,0,12px] flex items-center">
             <p className="uppercase text-lg">摄于遂宁市杨渡街道办</p>
           </div>
         </div>
-        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
+        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-2/3 md:w-1/2 lg:w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
           <div className="cardImg flex-[1,1,0] w-full min-h-0">
-            <video src="/videos/5.mp4" className="w-full h-full object-cover" />
+            <video src="/videos/5.mp4" className="w-full h-full object-cover will-change-transform" />
           </div>
           <div className="cardContent flex-[0,0,12px] flex items-center">
             <p className="uppercase text-lg">摄于绵阳市三台县鲁班水库</p>
           </div>
         </div>
-        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
+        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-2/3 md:w-1/2 lg:w-1/4 aspect-4/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
           <div className="cardImg flex-[1,1,0] w-full min-h-0">
-            <video src="/videos/4.mp4" className="w-full h-full object-cover" />
+            <video src="/videos/4.mp4" className="w-full h-full object-cover will-change-transform" />
           </div>
           <div className="cardContent flex-[0,0,12px] flex items-center">
             <p className="uppercase text-lg">摄于绵阳市三台县安置房-国庆节</p>
           </div>
         </div>
-        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
+        <div className="stackCard absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 will-change-transform w-2/3 md:w-1/2 lg:w-1/4 h-2/3 p-2 flex flex-col gap-2 bg-[#202020] text-white">
           <div className="cardImg flex-[1,1,0] w-full min-h-0">
-            <video src="/videos/3.mp4" className="w-full h-full object-cover" />
+            <video src="/videos/3.mp4" className="w-full h-full object-cover will-change-transform" />
           </div>
           <div className="cardContent flex-[0,0,12px] flex items-center">
             <p className="uppercase text-lg">摄于遂宁市灵泉寺</p>

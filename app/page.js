@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Float3DGallery from "./components/float3DGallery";
 import MiniTimelineCards from "./components/miniTimelineCards";
 import StackCards from "./components/stackCards";
+import InfiniteMarquee from "./components/infiniteMarquee";
 
 export default function Home() {
   return (
@@ -34,10 +35,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <InfiniteMarquee />
       <Float3DGallery />
-      <MiniTimelineCards />
       <StackCards />
-      <section className="w-full h-screen overflow-hidden bg-green-300"></section>
+      <MiniTimelineCards />
     </main>
   );
 }

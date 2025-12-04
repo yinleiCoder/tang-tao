@@ -45,6 +45,7 @@ export default function MiniTimelineCards() {
         trigger: spotlightContainerRef.current,
         start: "top top",
         end: `+${window.innerHeight * 6}px`,
+        // markers: true,
         pin: true,
         pinSpacing: true,
         scrub: 1,
@@ -144,9 +145,7 @@ export default function MiniTimelineCards() {
         className="spotlightContainer relative p-4 flex flex-col items-center justify-center overflow-hidden w-full h-svh bg-[#fffef8]"
       >
         <div className="spotlightHeader">
-          <h1 className="font-medium text-6xl tracking-widest">
-            爱若初见
-          </h1>
+          <h1 className="font-medium text-3xl lg:text-4xl tracking-widest">爱人如养花</h1>
         </div>
         <div
           ref={spotlightImagesRef}

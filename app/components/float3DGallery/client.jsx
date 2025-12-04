@@ -49,7 +49,7 @@ export default function Float3DGallery() {
         const card = document.createElement("div");
         card.className = `float3DCard float3DCard-${index}`;
         const img = document.createElement("img");
-        img.src = `images/tt${index+20}.jpg`;
+        img.src = `images/tt${index + 20}.jpg`;
         img.alt = `Image ${index}`;
         card.appendChild(img);
         card.style.top = cardPosition.top;
@@ -70,6 +70,7 @@ export default function Float3DGallery() {
         trigger: stickyContainerRef.current,
         start: "top top",
         end: `+=${window.innerHeight * 5}px`,
+        // markers: true,
         pin: true,
         scrub: 1,
         onUpdate: (self) => {
@@ -132,7 +133,6 @@ export default function Float3DGallery() {
             const newZ = -50000 + (targetZ + 50000) * individualProgress;
             const scaleProgress = Math.min(1, individualProgress * 10);
             const scale = Math.max(0, Math.min(1, scaleProgress));
-            console.log(newZ, scale);
             gsap.set(card, {
               z: newZ,
               scale: scale,
@@ -146,65 +146,66 @@ export default function Float3DGallery() {
 
   return (
     <>
-      <ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
-      <section
-        ref={stickyContainerRef}
-        className="stickyContainer relative w-full h-screen overflow-hidden bg-[#fffef8]"
-      >
-        <div
-          ref={titlesContainerRef}
-          className="titles absolute top-0 left-0 w-[400vw] h-screen flex will-change-transform"
+      <ReactLenis root="asChild" options={{ autoRaf: false }} ref={lenisRef}>
+        <section
+          ref={stickyContainerRef}
+          className="stickyContainer relative w-full h-screen overflow-hidden bg-[#fffef8]"
         >
-          <div className="title relative flex-1 flex justify-center items-center">
-            <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Yin Lei
-            </h1>
-            <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Yin Lei
-            </h1>
-            <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Yin Lei
-            </h1>
+          <div
+            ref={titlesContainerRef}
+            className="titles absolute top-0 left-0 w-[400vw] h-screen flex will-change-transform"
+          >
+            <div className="title relative flex-1 flex justify-center items-center">
+              <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Yin Lei
+              </h1>
+              <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Yin Lei
+              </h1>
+              <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Yin Lei
+              </h1>
+            </div>
+            <div className="title relative flex-1 flex justify-center items-center">
+              <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Love
+              </h1>
+              <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Love
+              </h1>
+              <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Love
+              </h1>
+            </div>
+            <div className="title relative flex-1 flex justify-center items-center">
+              <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Forever
+              </h1>
+              <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Forever
+              </h1>
+              <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Forever
+              </h1>
+            </div>
+            <div className="title relative flex-1 flex justify-center items-center">
+              <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Tang Tao
+              </h1>
+              <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Tang Tao
+              </h1>
+              <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
+                Tang Tao
+              </h1>
+            </div>
           </div>
-          <div className="title relative flex-1 flex justify-center items-center">
-            <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Love
-            </h1>
-            <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Love
-            </h1>
-            <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Love
-            </h1>
-          </div>
-          <div className="title relative flex-1 flex justify-center items-center">
-            <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Forever
-            </h1>
-            <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Forever
-            </h1>
-            <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Forever
-            </h1>
-          </div>
-          <div className="title relative flex-1 flex justify-center items-center">
-            <h1 className="title-1 uppercase font-semibold italic text-[#dafa6c] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Tang Tao
-            </h1>
-            <h1 className="title-2 uppercase font-semibold italic text-[#10d0f4] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Tang Tao
-            </h1>
-            <h1 className="title-3 uppercase font-semibold italic text-[#1f1f1f] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9vw] will-change-transform">
-              Tang Tao
-            </h1>
-          </div>
-        </div>
-        <div
-          ref={imagesContainerRef}
-          className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250vw] h-[250vh] transform-3d perspective-[2000px] -z-10"
-        ></div>
-      </section>
+          <div
+            ref={imagesContainerRef}
+            className="images absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250vw] h-[250vh] transform-3d perspective-[2000px] -z-10"
+          ></div>
+        </section>
+      </ReactLenis>
     </>
   );
 }
